@@ -1,0 +1,19 @@
+:root {
+  --font-black: #000;
+  --font-blue: #1A5487;
+  --footer-bg: #064073;
+  --cta-bg: #F2C53D;
+  --bg-white: #fff;
+  --bg-blue: rgba(200, 230, 255, .3);
+  --bg-yellow: rgba(242, 197, 61, .2);
+  --bg-red: rgba(217, 68, 54, .2);
+  --font-poppins: 'Poppins', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--font-montserrat);
+  color: var(--font-black);
+  background-color: var(--bg-white);
+}
