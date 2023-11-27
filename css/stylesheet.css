@@ -40,6 +40,27 @@
     background-color: var(--bg-white);
     padding: .8rem 2.4rem;
   }
+
+  & button {
+    display: block;
+    font-family: var(--font-poppins);
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    padding: .8rem 8rem;
+    margin: 18rem auto 0 auto;
+
+    & a {
+      text-decoration: none;
+      color: var(--font-blue);
+    }
+  }
+
+  .cta-yellow {
+    background-color: var(--cta-bg);
+    border-radius: 4px;
+    text-wrap: nowrap;
+  }
 }
 
 h4 {
@@ -336,31 +357,40 @@ p {
 
 @media screen and (min-width:1024px) {
   .main-view {
-  background-image: url(../image/home_bg_large.jpg);
-  height: 100vh;
+    background-image: url(../image/home_bg_large.jpg);
+    height: 100vh;
 
-  & h1 {
-    display: block;
-    font-size: 6.7rem;
-    line-height: 8rem;
-    font-weight: 700;
-    margin-top: 20rem;
-    margin-bottom: 3.2rem;
-    background-color: transparent;
-    padding: 0;
+    & h1 {
+      display: block;
+      font-size: 6.7rem;
+      line-height: 8rem;
+      font-weight: 700;
+      margin-top: 20rem;
+      margin-bottom: 3.2rem;
+      background-color: transparent;
+      padding: 0;
+    }
+
+    & h2 {
+      display: block;
+      font-size: 2.8rem;
+      line-height: 4rem;
+      background-color: transparent;
+      padding: 0;
+    }
+
+    & br {
+      display: none;
+    }
+
+    .sp-mv-cta {
+      display: none;
+    }
+
+    & button {
+      margin: 0 auto;
+    }
   }
 
-  & h2 {
-    display: block;
-    font-size: 2.8rem;
-    line-height: 4rem;
-    background-color: transparent;
-    padding: 0;
-  }
-
-  & br {
-    display: none;
-  }
-}
 }
 

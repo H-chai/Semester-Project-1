@@ -1,12 +1,12 @@
 footer {
   background-color: var(--footer-bg);
   color: white;
-  padding: 12.8rem 8rem 4.8rem 8rem;
+  padding: 6.4rem 3rem 3rem 3rem;
 
   & h6 {
     font-family: var(--font-poppins);
     font-size: 1.8rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 2.4rem;
   }
 }
@@ -14,14 +14,29 @@ footer {
 .footer-main-container {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   font-family: var(--font-poppins);
-  margin-bottom: 19.6rem;
+  margin-bottom: 8rem;
 }
 
 .footer-container-title {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.footer-icon {
+  padding-right: .6rem;
+}
+
+.opening-hours {
+  margin-bottom: 5.6rem;
+  
+  & table {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 table {
@@ -55,26 +70,30 @@ td {
 }
 
 .address {
+  margin-bottom: 4.6rem;
 
   & p {
     font-size: 1.8rem;
-    font-weight: 500;
     line-height: 2.6rem;
+    font-weight: 400;
     width: 27.5rem;
-    margin-bottom: 4.2rem;
+    text-align: center;
+    margin: 0 auto 2.8rem auto;
   }
 }
 
 .footer-nav {
+  margin-bottom: 5.6rem;
 
   & ul {
     list-style: none;
     display: flex;
-    flex-direction: column;
-    gap: 4.2rem;
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-    font-weight: 600;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem 7rem;
+    font-size: 1.6rem;
+    font-weight: 500;
   }
 
   & li {
@@ -84,17 +103,20 @@ td {
       color: white;
     }
   }
+
 }
 
 .sns {
+  text-align: center;
 
   & ul {
-    margin-top: 2.4rem;
     list-style: none;
     display: flex;
-    gap: 1rem;
+    justify-content: center;
+    gap: 1.6rem;
+    margin-top: 1.6rem;
   }
-
+  
   & li {
 
     & a {
@@ -107,18 +129,7 @@ td {
       border-radius: 100%;
     }
   }
-}
 
-.sns-link, .sns-icon {
-  transition: .3s;
-}
-
-.sns-link:hover {
-  transform: scale(1.2);
-}
-
-.sns-link:hover .sns-icon {
-  transform: scale(1.2);
 }
 
 .documents {
@@ -126,9 +137,9 @@ td {
   & ul {
     list-style: none;
     display: flex;
-    justify-content: end;
-    gap: 5.6rem;
-    font-size: 1.4rem;
+    justify-content: center;
+    gap: 2.4rem;
+    font-size: 1.2rem;
     line-height: 2.4rem;
 
     & a {
@@ -143,100 +154,74 @@ td {
 
 }
 
-.footer-icon {
-  padding-right: .6rem;
-}
+@media screen and (min-width:1280px) {
 
-@media screen and (max-width:1279px) {
+  footer {
+    padding: 12.8rem 8rem 4.8rem 8rem;
+
+    & h6 {
+      font-weight: 700;
+    }
+  }
+
   .footer-main-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5.6rem 3.2em;
-    margin-bottom: 12.8rem;
+    flex-direction: row;
+    margin-bottom: 19.6rem;
+  }
+
+  .footer-container-title {
+    margin-bottom: 2.4rem;
+  }
+
+  .address {
+
+    & p {
+      font-weight: 500;
+      margin-bottom: 4.2rem;
+    }
   }
 
   .footer-nav {
+
     & ul {
-      gap: 3.2rem;
-    }
-  }
-}
-
-@media screen and (max-width:767px) {
-
-  footer {
-    padding: 6.4rem 3rem 3rem 3rem;
-
-    & h6 {
+      flex-direction: column;
+      gap: 4.2rem;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
       font-weight: 600;
     }
   }
 
-  .footer-main-container {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin-bottom: 8rem;
-  }
-
-  .footer-container-title {
-    justify-content: center;
-    margin-bottom: 1rem;
-  }
-
-  .opening-hours {
-    margin-bottom: 5.6rem;
-    
-    & table {
-      display: flex;
-      justify-content: center;
-    }
-  }
-
-  .address {
-    margin-bottom: 4.6rem;
-
-    & p {
-      font-weight: 400;
-      width: 27.5rem;
-      text-align: center;
-      margin: 0 auto 2.8rem auto;
-    }
-  }
-
-  .footer-nav {
-    margin-bottom: 5.6rem;
-
-    & ul {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem 7rem;
-      font-size: 1.6rem;
-      font-weight: 500;
-    }
-
-  }
-
   .sns {
-    text-align: center;
+    text-align: left;
 
     & ul {
-      margin-top: 1.6rem;
-      gap: 1.6rem;
-      justify-content: center;
+      margin-top: 2.4rem;
+      gap: 1rem;
     }
-  
+
+  }
+
+  .sns-link, .sns-icon {
+    transition: .3s;
+  }
+
+  .sns-link:hover {
+    transform: scale(1.2);
+  }
+
+  .sns-link:hover .sns-icon {
+    transform: scale(1.2);
   }
 
   .documents {
 
     & ul {
-      justify-content: center;
-      gap: 2.4rem;
-      font-size: 1.2rem;
+      justify-content: end;
+      gap: 5.6rem;
+      font-size: 1.4rem;
     }
-  
+
   }
 
 }
