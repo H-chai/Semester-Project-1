@@ -49,17 +49,18 @@
     font-weight: 700;
     padding: .8rem 8rem;
     margin: 18rem auto 0 auto;
-
-    & a {
-      text-decoration: none;
-      color: var(--font-blue);
-    }
   }
 
-  .cta-yellow {
-    background-color: var(--cta-bg);
-    border-radius: 4px;
-    text-wrap: nowrap;
+}
+
+.cta-yellow {
+  background-color: var(--cta-bg);
+  border-radius: 4px;
+  text-wrap: nowrap;
+
+  & a {
+    text-decoration: none;
+    color: var(--font-blue);
   }
 }
 
@@ -84,7 +85,7 @@ h5 {
 
 p {
   font-size: 1.6rem;
-  line-height: 2.4rem;
+  line-height: 1.5;
 }
 
 .exhibits {
@@ -107,7 +108,7 @@ p {
     border-radius: 4px 4px 0 0;
   }
 
-  & button {
+  & .exhibits-button {
     width: 100%;
     padding: 1.6rem 0;
     margin-top: 4rem;
@@ -153,6 +154,7 @@ p {
       font-family: var(--font-poppins);
       font-weight: 600;
       font-size: 1.6rem;
+      line-height: 2.4rem;
     }
   }
 }
@@ -388,8 +390,205 @@ p {
     }
 
     & button {
+      padding: .8rem 4rem;
       margin: 0 auto;
     }
+
+  }
+
+  h4 {
+    font-size: 3.8rem;
+    line-height: 5.6rem;
+    text-align: left;
+    margin-bottom: 6.4rem;
+  }
+
+  h5 {
+    font-size: 2.8rem;
+    line-height: 4rem;
+  }
+
+  .exhibits {
+    position: relative;
+    padding: 23.4rem 12.8rem 19.2rem 12.8rem;
+
+    & ul {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 0;
+    }
+
+    & li {
+      width: 32%;
+    }
+
+    & .exhibits-button {
+      width: 35%;
+      display: block;
+      margin: 8rem auto 0 auto;
+      position: relative;
+    }
+
+    & .exhibits-button::before {
+      content: '';
+      background-image: url(../image/AdobeStock_491861288.png);
+      background-size: contain;
+      width: 8.2rem;
+      height: 15.3rem;
+      transform: rotate(-10deg);
+      position: absolute;
+      top: -50%;
+      left: -30%;
+    }
+  }
+
+  .exhibits-text-wrapper {
+    padding: 3.2rem 2.8rem 4rem 2.8rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* 比率を指定 */
+
+    & h5 {
+      margin-bottom: 2.4rem;
+    }
+
+    & p {
+      margin-bottom: 4.8rem;
+      flex-grow: 1; /* 比率を指定 */
+    }
+
+    & button {
+      padding: 1.2rem 0;
+    }
+  }
+
+  .exhibits::before {
+    content: '';
+    background-image: url(../image/polar-human-cell.png);
+    background-size: contain;
+    width: 11.8rem;
+    height: 12.1rem;
+    position: absolute;
+    top: 14.4rem;
+    right: 12.8rem;
+  }
+
+  .events {
+    padding: 17.6rem 12.8rem 14.4rem 12.8rem;
+
+    & ul {
+      padding-left: 0;
+      overflow-x: hidden;
+      justify-content: space-between;
+      gap: 0;
+    }
+
+    & li {
+      width: 32%;
+    }
+
+    & .events-illustration {
+      left: 12.8rem;
+    }
+
+    & .dinosaur_1 {
+      width: 14.6rem;
+      margin-right: 1.6rem;
+    }
+  
+    & .dinosaur_2 {
+      width: 18.6rem;
+    }
+  }
+
+  .events-text-wrapper {
+    padding: 4rem 2.8rem;
+
+    & .category {
+      padding: .2rem 3.6rem;
+      margin-bottom: 4rem;
+    }
+
+    & h5 {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      margin-bottom: 2.4rem;
+    }
+
+    & p {
+      margin-top: 2.4rem;
+      margin-bottom: 4.8rem;
+    }
+
+    & button {
+      padding: 1.2rem 0;
+    }
+  }
+
+  .explore {
+    padding: 17.6rem 12.8rem 14.4rem 12.8rem;
+
+    & ul {
+      padding-left: 0;
+      overflow-x: hidden;
+      justify-content: space-between;
+      gap: 0;
+    }
+
+    & li {
+      width: 27%;
+    }
+
+    & li:first-child {
+      width: 42%;
+    }
+  }
+
+  .explore-text-wrapper {
+    padding: 2.4rem 2.8rem 3.2rem 2.8rem;
+
+    & h5 {
+      margin-bottom: 1.6rem;
+      text-align: left;
+    }
+  }
+
+  .image-wrapper {
+    padding: 0rem 3.2rem;
+    margin-top: 22.2rem;
+    margin-bottom: 23.2rem;
+
+    & ul {
+      gap: 2.4rem;
+    }
+
+    & li {
+      width: 25.6rem;
+    }
+  }
+
+  .image-wrapper::before {
+    width: 19.8rem;
+    height: 20.8rem;
+    top: -40%;
+    left: 7%;
+  }
+
+  .image-wrapper::after {
+    width: 20.2rem;
+    height: 20.2rem;
+    bottom: -40%;
+    right: 7%;
+  }
+
+  .blue-cta-hover:hover {
+    background-color: var(--cta-bg);
+    transition: .3s;
+  }
+
+  .blue-cta-hover:hover .hover-blue {
+    color: var(--font-blue);
+    transition: .3s;
   }
 
 }

@@ -72,7 +72,7 @@ header {
   display: block;
 }
 
-a, label {
+.logo, label {
   position: relative;
   z-index: 999;
 }
@@ -162,7 +162,7 @@ a, label {
   .hover-text-yellow {
     text-decoration: none;
     color: var(--font-blue);
-    transition: 0.5s;
+    transition: 0.3s;
   }
   
   .cta-yellow:hover .hover-text-yellow {
