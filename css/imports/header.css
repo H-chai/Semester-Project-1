@@ -58,27 +58,32 @@ header {
 
   & button {
     padding: .8rem 4rem;
-    background-color: var(--cta-bg);
-    border-radius: 4px;
-    text-wrap: nowrap;
     transition: 0.5s;
-  }
-
-  & button:hover {
-    background-color: var(--font-blue);
-  }
-
-  .hover-text-yellow {
-    transition: 0.5s;
-  }
-
-  & button:hover .hover-text-yellow {
-    color: var(--cta-bg);
   }
 
   & .clock-icon {
     padding-right: .3rem;
   }
+}
+
+.cta-yellow {
+  background-color: var(--cta-bg);
+  border-radius: 4px;
+  text-wrap: nowrap;
+}
+
+.cta-yellow:hover {
+  background-color: var(--font-blue);
+}
+
+.hover-text-yellow {
+  text-decoration: none;
+  color: var(--font-blue);
+  transition: 0.5s;
+}
+
+.cta-yellow:hover .hover-text-yellow {
+  color: var(--cta-bg);
 }
 
 .hours-hover {
