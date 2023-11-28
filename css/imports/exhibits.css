@@ -1,0 +1,141 @@
+.sub-main-view {
+  height: 80vh;
+}
+
+.exhibits-main {
+  background-image: url(../../image/exhibits_bg_small.jpg);
+  background-position: bottom;
+}
+
+.exhibits-container {
+  padding-top: 6.4rem;
+  padding-bottom: 9.6rem;
+
+  & ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  & li {
+    width: 100%;
+  }
+}
+
+.exhibits-image {
+  padding: 1.3rem 2rem;
+
+  & img {
+    width: 100%;
+  }
+}
+
+.bg-red {
+  background-color: var(--bg-red);
+}
+
+.bg-yellow {
+  background-color: var(--bg-yellow);
+}
+
+.exhibits-page-text-wrapper {
+  padding: 1.6rem 2rem;
+
+  & h5 {
+    text-align: left;
+    margin-bottom: 1.6rem;
+  }
+
+  & .line {
+    width: 12.4rem;
+    height: 3px;
+    background-color: var(--cta-bg);
+    margin-bottom: 1.6rem;
+  }
+}
+
+@media screen and (min-width:1024px) {
+
+  .sub-main-view {
+    height: 100vh;
+  }
+
+  .exhibits-main {
+    background-image: url(../../image/exhibits_bg_large.jpg);
+    background-position: center;
+  }
+
+  .exhibits-container {
+    padding: 20rem 15.2rem 23.2rem 15.2rem;
+  
+    & ul {
+      gap: 16.8rem;
+    }
+  
+    & li {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    & li:nth-child(odd) {
+      flex-direction: row-reverse;
+    }
+
+    .bg-red, .bg-yellow {
+      background-color: transparent;
+      position: relative;
+    }
+  }
+
+  .exhibits-image {
+    padding: 0;
+    width: 50%;
+  
+    & img {
+      width: 100%;
+    }
+  }
+
+  .exhibits-page-text-wrapper {
+    padding: 0;
+    width: 43%;
+  
+    & h5 {
+      font-size: 3.8rem;
+      line-height: 5.6rem;
+      margin-bottom: 2.4rem;
+    }
+  
+    & .line {
+      width: 22.4rem;
+      height: 4px;
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  .bg-red::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-red);
+    position: absolute;
+    left: 5%;
+    top: 7%;
+    z-index: -1;
+  }
+  
+  .bg-yellow::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-yellow);
+    position: absolute;
+    left: 5%;
+    top: 7%;
+    z-index: -1;
+  }
+}

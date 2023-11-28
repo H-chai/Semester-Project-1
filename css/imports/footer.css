@@ -72,10 +72,11 @@ td {
 .address {
   margin-bottom: 4.6rem;
 
-  & p {
+  & address {
     font-size: 1.8rem;
     line-height: 2.6rem;
     font-weight: 400;
+    font-style: normal;
     width: 27.5rem;
     text-align: center;
     margin: 0 auto 2.8rem auto;

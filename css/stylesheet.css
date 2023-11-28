@@ -10,10 +10,7 @@
 @import "imports/privacy-policy.css";
 
 .main-view {
-  background-image: url(../image/home_bg_small.jpeg);
-  background-position: center;
   background-size: cover;
-  height: 90vh;
   color: var(--font-blue);
   font-family: var(--font-poppins);
   text-align: center;
@@ -53,6 +50,12 @@
 
 }
 
+.home-main {
+  background-image: url(../image/home_bg_small.jpeg);
+  background-position: center;
+  height: 90vh;
+}
+
 .cta-yellow {
   background-color: var(--cta-bg);
   border-radius: 4px;
@@ -85,7 +88,7 @@ h5 {
 
 p {
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .exhibits {
@@ -353,14 +356,8 @@ p {
   z-index: -1;
 }
 
-@media screen and (min-width:768px) {
-
-}
-
 @media screen and (min-width:1024px) {
   .main-view {
-    background-image: url(../image/home_bg_large.jpg);
-    height: 100vh;
 
     & h1 {
       display: block;
@@ -394,6 +391,11 @@ p {
       margin: 0 auto;
     }
 
+  }
+
+  .home-main {
+    background-image: url(../image/home_bg_large.jpg);
+    height: 100vh;
   }
 
   h4 {
