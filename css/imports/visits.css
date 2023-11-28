@@ -1,0 +1,134 @@
+.visits-main {
+  background-image: url(../../image/visits_bg_small.jpg);
+  background-position: top;
+}
+
+.visits-container {
+  padding-top: 8.8rem;
+  padding-bottom: 9.6rem;
+
+  & h6 {
+    font-family: var(--font-poppins);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+  }
+}
+
+.visits-info {
+  color: var(--font-blue);
+  font-family: var(--font-poppins);
+}
+
+.visits-opening-hour {
+  background-color: var(--bg-yellow);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  position: relative;
+  margin-bottom: 2.4rem;
+}
+
+.visits-opening-hour::before {
+  content: '';
+  width: 10rem;
+  height: 10rem;
+  background-image: url(../../image/AdobeStock_524132805.png);
+  background-size: contain;
+  position: absolute;
+  top: -10%;
+  right: 0;
+}
+
+.visits-tr {
+  border-bottom: solid 1px var(--font-blue);
+}
+
+.visits-address {
+  background-color: var(--bg-yellow);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  position: relative;
+  margin-bottom: 0;
+}
+
+.visits-address::after {
+  content: '';
+  width: 10rem;
+  height: 10rem;
+  background-image: url(../../image/AdobeStock_191515206.png);
+  background-size: contain;
+  position: absolute;
+  bottom: -15%;
+  left: 0;
+}
+
+.visits-text-wrapper {
+  padding: 6.4rem 2rem 0 2rem;
+
+  & ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  & h5 {
+    text-align: left;
+    margin-bottom: .8rem;
+  }
+}
+
+@media screen and (min-width:1024px) {
+
+  .visits-main {
+    background-image: url(../../image/visit_bg_large.jpg);
+    background-position: bottom;
+  }
+
+  .visits-container {
+    padding-top: 20rem;
+    padding-bottom: 23.2rem;
+  }
+
+  .visits-info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8rem;
+  }
+
+  .visits-opening-hour {
+    padding: 5.6rem 7.2rem;
+    margin-bottom: 0;
+    border-radius: 4px;
+  }
+
+  .visits-address {
+    padding: 5.6rem 7.2rem;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    & address {
+      text-align: left;
+    }
+  }
+
+  .visits-text-wrapper {
+    padding: 10.4rem 21.4rem 0 21.4rem;
+  
+    & ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+    }
+  
+    & h5 {
+      text-align: left;
+      margin-bottom: .8rem;
+    }
+  }
+}
