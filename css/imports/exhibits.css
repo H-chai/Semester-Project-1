@@ -67,7 +67,7 @@
   }
 
   .exhibits-container {
-    padding: 20rem 15.2rem 23.2rem 15.2rem;
+    padding: 20rem 10% 23.2rem 10%;
   
     & ul {
       gap: 16.8rem;
