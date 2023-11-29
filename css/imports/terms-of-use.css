@@ -32,6 +32,10 @@
       margin-bottom: .8rem;
       color: var(--font-blue);
     }
+
+    & a {
+      color: var(--font-blue);
+    }
   }
 
   & .terms-of-use-list {
