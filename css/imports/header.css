@@ -148,6 +148,21 @@ header {
       padding-right: .3rem;
     }
   }
+
+  .current-page {
+    position: relative;
+  }
+    
+  .current-page::after {
+    position: absolute;
+    bottom: -3px;
+    left:50%;
+    transform: translateX(-50%);
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: var(--font-blue);
+  }
   
   .cta-yellow {
     background-color: var(--cta-bg);
