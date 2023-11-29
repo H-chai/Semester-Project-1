@@ -364,10 +364,13 @@ p {
       font-size: 6.7rem;
       line-height: 8rem;
       font-weight: 700;
-      margin-top: 20rem;
-      margin-bottom: 3.2rem;
       background-color: transparent;
       padding: 0;
+    }
+
+    & .heading_1 {
+      margin-top: 20rem;
+      margin-bottom: 3.2rem;
     }
 
     & h2 {

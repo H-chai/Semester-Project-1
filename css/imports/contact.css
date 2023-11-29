@@ -1,0 +1,138 @@
+.contact-main {
+
+  & .contact-h1 {
+    margin-top: 5.6rem;
+    margin-bottom: 5.6rem;
+  }
+
+}
+
+.contact-container {
+  & h6 {
+    font-family: var(--font-poppins);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+  }
+}
+
+.contact-form {
+  padding: 6.4rem 2rem 9.6rem 2rem;
+  display: flex;
+  flex-direction: column;
+
+  & p {
+    text-align: center;
+    margin-bottom: 3.2rem;
+  }
+}
+
+.contact-input {
+
+  & form {
+    width: 100%;
+  }
+
+  & input {
+    display: block;
+    margin-bottom: 1.6rem;
+  }
+
+  & input, textarea {
+    width: 100%;
+    background-color: var(--bg-blue);
+    padding: 1.6rem;
+    border-bottom: solid 1px #427CAF;
+    font-size: 1.4rem;
+  }
+
+  & .user-input::placeholder {
+    color: #686F7E;
+    font-weight: 500;
+  }
+
+  & .form-btn {
+    width: 100%;
+    padding: 1.6rem 0;
+    margin-top: 3.2rem;
+    font-family: var(--font-poppins);
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 700;
+    color: var(--font-blue);
+  }
+
+  & .form-btn:hover {
+    color: var(--cta-bg);
+  }
+}
+
+@media screen and (min-width:1024px) {
+
+  .contact-main {
+
+    & .contact-h1 {
+      margin-top: 20rem;
+      margin-bottom: 8rem;
+    }
+
+  }
+
+
+  & .contact-container {
+    padding: 0 15%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 23.2rem;
+
+    & .visits-info {
+      display: flex;
+      flex-direction: column;
+      gap: 4.8rem;
+
+      & .contact-opening-hour, .contact-address {
+        padding: 0;
+        background-color: white;
+      }
+    }
+  }
+
+  .contact-form {
+    padding: 0;
+    width: 50%;
+  
+    & p {
+      text-align: left;
+      margin-bottom: 4rem;
+    }
+  }
+
+  .contact-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    & input {
+      margin-bottom: 2.4rem;
+    }
+  
+    & input, textarea {
+      padding: 1.6rem 2.4rem;
+      font-size: 1.6rem;
+    }
+  
+    & .user-input::placeholder {
+      color: #686F7E;
+      font-weight: 500;
+    }
+  
+    & .form-btn {
+      width: 80%;
+      margin-top: 5.6rem;
+      font-weight: 600;
+    }
+
+  }
+}

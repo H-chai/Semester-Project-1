@@ -28,7 +28,7 @@
   margin-bottom: 2.4rem;
 }
 
-.visits-opening-hour::before {
+.hours-decoration::before {
   content: '';
   width: 10rem;
   height: 10rem;
@@ -51,7 +51,7 @@
   margin-bottom: 0;
 }
 
-.visits-address::after {
+.address-decoration::after {
   content: '';
   width: 10rem;
   height: 10rem;
