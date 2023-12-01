@@ -11,11 +11,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!--
+  
   <div id="loading">
     <div class="lds-dual-ring"></div>
   </div>
-  -->
+
   <div class="main-view home-main">
     <header>
       <a href="index.html" class="logo">
@@ -278,5 +278,17 @@
   </footer>
 
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  <script>
+    window.onload = function () {
+      const spinner = document.getElementById('loading');
+      spinner.classList.add('loaded');
+    }
+  </script>
+  <script>
+    window.onload = function () {
+      const spinner = document.getElementById('loading');
+      spinner.classList.add('loaded');
+    }
+  </script>
 </body>
 </html>
