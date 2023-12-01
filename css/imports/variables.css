@@ -18,3 +18,63 @@ html {
   color: var(--font-black);
   background-color: var(--bg-white);
 }
+
+& .blue-cta-hover {
+  padding: 1.2rem 0;
+  background-color: var(--font-blue);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-family: var(--font-poppins);
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.cta-yellow {
+  font-family: var(--font-poppins);
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  background-color: var(--cta-bg);
+  border-radius: 4px;
+  text-wrap: nowrap;
+  text-decoration: none;
+  color: var(--font-blue);
+  transition: 0.3s;
+}
+
+@media screen and (min-width:1024px) {
+  
+  .cta-yellow {
+    background-color: var(--cta-bg);
+    border-radius: 4px;
+    text-wrap: nowrap;
+    text-decoration: none;
+    color: var(--font-blue);
+    transition: 0.3s;
+  }
+  
+  .cta-yellow:hover {
+    background-color: var(--font-blue);
+    color: var(--cta-bg);
+  }
+
+  & .blue-cta-hover {
+    padding: 1.2rem 0;
+    background-color: var(--font-blue);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--font-poppins);
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 4px;
+  }
+
+  .blue-cta-hover:hover {
+    background-color: var(--cta-bg);
+    color: var(--font-blue);
+    transition: .3s;
+  }
+}

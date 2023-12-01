@@ -39,11 +39,6 @@
   }
 
   & button {
-    display: block;
-    font-family: var(--font-poppins);
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    font-weight: 700;
     padding: .8rem 8rem;
     margin: 18rem auto 0 auto;
   }
@@ -111,23 +106,21 @@ p {
     border-radius: 4px 4px 0 0;
   }
 
-  & .exhibits-button {
+  & .exhibits-link {
+    display: block;
     width: 100%;
     padding: 1.6rem 0;
     margin-top: 4rem;
+    text-align: center;
   }
 
-  .hover-text-yellow {
-    font-family: var(--font-poppins);
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-    font-weight: 600;
-  }
 }
 
 .exhibits-text-wrapper {
   background-color: var(--bg-blue);
   padding: 3.2rem 2rem;
+  display: flex;
+  flex-direction: column;
 
   & h5 {
     margin-bottom: 1.6rem;
@@ -212,7 +205,7 @@ p {
 .events-text-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: normal;
   padding: 3.2rem 2rem;
   background-color: white;
 
@@ -223,9 +216,11 @@ p {
     font-weight: 600;
     color: var(--font-blue);
     background-color: var(--cta-bg);
+    width: 38%;
     padding: .2rem 2.8rem;
-    margin-bottom: 2.4rem;
+    margin: 0 auto 2.4rem auto;
     display: inline-block;
+    text-align: center;
   }
 
   & h5 {
@@ -427,44 +422,43 @@ p {
       width: 32%;
     }
 
-    & .exhibits-button {
+    & .exhibits-link {
       width: 35%;
-      display: block;
       margin: 8rem auto 0 auto;
       position: relative;
     }
 
-    & .exhibits-button::before {
+    & .exhibits-link::before {
       content: '';
       background-image: url(../image/AdobeStock_491861288.png);
       background-size: contain;
       width: 8.2rem;
       height: 15.3rem;
       transform: rotate(-10deg);
+      transition: .3s;
       position: absolute;
       top: -50%;
       left: -30%;
+      pointer-events: none;
+    }
+
+    & .exhibits-link:hover::before {
+      transform: rotate(0deg);
     }
   }
 
   .exhibits-text-wrapper {
     padding: 3.2rem 2.8rem 4rem 2.8rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1; /* 比率を指定 */
-
+    flex-grow: 1;
     & h5 {
       margin-bottom: 2.4rem;
     }
 
     & p {
       margin-bottom: 4.8rem;
-      flex-grow: 1; /* 比率を指定 */
+      flex-grow: 1;
     }
 
-    & button {
-      padding: 1.2rem 0;
-    }
   }
 
   .exhibits::before {
@@ -510,8 +504,8 @@ p {
     padding: 4rem 2.8rem;
 
     & .category {
-      padding: .2rem 3.6rem;
-      margin-bottom: 4rem;
+      padding: .2rem 0rem;
+      margin: 0 auto 4rem auto;
     }
 
     & h5 {
@@ -584,16 +578,6 @@ p {
     height: 20.2rem;
     bottom: -40%;
     right: 7%;
-  }
-
-  .blue-cta-hover:hover {
-    background-color: var(--cta-bg);
-    transition: .3s;
-  }
-
-  .blue-cta-hover:hover .hover-blue {
-    color: var(--font-blue);
-    transition: .3s;
   }
 
 }

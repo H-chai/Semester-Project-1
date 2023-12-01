@@ -97,6 +97,10 @@ header {
   }
   
   .header-left {
+
+    & p {
+      font-size: 1.8rem;
+    }
   
     .pc-nav-menu {
       list-style: none;
@@ -139,7 +143,7 @@ header {
       color: var(--font-blue);
     }
   
-    & button {
+    .cta-yellow {
       padding: .8rem 4rem;
       transition: 0.5s;
     }
@@ -162,26 +166,6 @@ header {
     width: 20px;
     height: 2px;
     background-color: var(--font-blue);
-  }
-  
-  .cta-yellow {
-    background-color: var(--cta-bg);
-    border-radius: 4px;
-    text-wrap: nowrap;
-  }
-  
-  .cta-yellow:hover {
-    background-color: var(--font-blue);
-  }
-  
-  .hover-text-yellow {
-    text-decoration: none;
-    color: var(--font-blue);
-    transition: 0.3s;
-  }
-  
-  .cta-yellow:hover .hover-text-yellow {
-    color: var(--cta-bg);
   }
   
   .hours-hover {
