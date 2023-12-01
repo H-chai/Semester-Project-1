@@ -1,8 +1,4 @@
-.pc-logo {
-  display: none;
-}
-
-.sp-logo {
+.logo-svg {
   display: block;
   width: 12.3rem;
 }
@@ -82,14 +78,13 @@ header {
   header {
     padding: 2.4rem 3.2rem 0 3.2rem;
   }
-  
-  .pc-logo {
-    display: block;
-    width: 17rem;
+
+  .logo {
+    width: 17%;
   }
   
-  .sp-logo {
-    display: none;
+  .logo-svg {
+    width: 100%;
   }
 
   .pc-nav {
