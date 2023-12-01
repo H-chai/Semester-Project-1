@@ -158,7 +158,7 @@ td {
 @media screen and (min-width:1280px) {
 
   footer {
-    padding: 12.8rem 8rem 4.8rem 8rem;
+    padding: 10.4rem 10% 4.8rem 10%;
 
     & h6 {
       font-weight: 700;
@@ -167,14 +167,19 @@ td {
 
   .footer-main-container {
     flex-direction: row;
-    margin-bottom: 19.6rem;
+    margin-bottom: 10.4rem;
   }
 
   .footer-container-title {
     margin-bottom: 2.4rem;
   }
 
+  .opening-hours {
+    margin-bottom: 0;
+  }
+
   .address {
+    margin-bottom: 0;
 
     & p {
       font-weight: 500;
@@ -183,6 +188,7 @@ td {
   }
 
   .footer-nav {
+    margin-bottom: 0;
 
     & ul {
       flex-direction: column;
