@@ -45,6 +45,15 @@ html {
   display: block;
 }
 
+p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.new-paragraph {
+  margin-top: .6rem;
+}
+
 @media screen and (min-width:1024px) {
   
   .cta-yellow {
