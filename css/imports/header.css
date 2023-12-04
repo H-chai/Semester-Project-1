@@ -168,7 +168,8 @@ header {
     cursor: pointer;
   }
   
-  .hours-hover:hover .hover-opening-hours {
+  .hours-hover:hover .hover-opening-hours,
+  .hours-hover:focus .hover-opening-hours {
     display: block;
   }
   
