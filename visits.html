@@ -18,7 +18,7 @@
 
   <div class="main-view sub-main-view visits-main">
     <header>
-      <a href="index.html" class="logo">
+      <a href="index.html" class="logo" aria-label="Jump to home">
         <img src="image/logo.svg"  alt="logo of Community Science Museum" title="jump to Home" class="logo-svg">
       </a>
       <div class="header-left">
@@ -61,19 +61,23 @@
         </nav>
         <div class="hamburger-menu-container">
           <input type="checkbox" id="hamburger-menu">
-          <label for="hamburger-menu" class="open-menu"><iconify-icon icon="pajamas:hamburger" style="color: #1a5487;" width="22"></iconify-icon></label>
-        <label for="hamburger-menu" class="close-menu"><iconify-icon icon="icon-park-outline:close" style="color: #1a5487;" width="22"></iconify-icon></label>
-        <div class="sp-nav">
-          <nav>
-            <ul class="sp-nav-menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="visits.html">Visits</a></li>
-              <li><a href="exhibits.html">Exhibits</a></li>
-              <li><a href="support.html">Support</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
+          <label for="hamburger-menu" class="open-menu">
+            <iconify-icon icon="pajamas:hamburger" style="color: #1a5487;" width="22" aria-label="Open menu"></iconify-icon>
+          </label>
+          <label for="hamburger-menu" class="close-menu">
+            <iconify-icon icon="icon-park-outline:close" style="color: #1a5487;" width="22" aria-label="Close menu"></iconify-icon>
+          </label>
+          <div class="sp-nav">
+            <nav>
+              <ul class="sp-nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="visits.html">Visits</a></li>
+                <li><a href="exhibits.html">Exhibits</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -200,10 +204,26 @@
       <div class="sns">
         <h6>Follow us</h6>
         <ul>
-          <li><a href="#" class="sns-link"><iconify-icon icon="mdi:instagram" style="color: #064073;" width="16" height="16" class="sns-icon"></iconify-icon></a></li>
-          <li><a href="#" class="sns-link"><iconify-icon icon="ri:facebook-fill" style="color: #064073;" width="16" height="16" class="sns-icon"></iconify-icon></a></li>
-          <li><a href="#" class="sns-link"><iconify-icon icon="ri:linkedin-fill" style="color: #064073;" width="16" height="16" class="sns-icon"></iconify-icon></a></li>
-          <li><a href="#" class="sns-link"><iconify-icon icon="mdi:twitter" style="color: #064073;" width="16" height="16" class="sns-icon"></iconify-icon></a></li>
+          <li>
+            <a href="#" class="sns-link">
+              <iconify-icon icon="mdi:instagram" style="color: #064073;" width="16" height="16" class="sns-icon" aria-label="instagram"></iconify-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sns-link">
+              <iconify-icon icon="ri:facebook-fill" style="color: #064073;" width="16" height="16" class="sns-icon" aria-label="facebook"></iconify-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sns-link">
+              <iconify-icon icon="ri:linkedin-fill" style="color: #064073;" width="16" height="16" class="sns-icon" aria-label="linkedin"></iconify-icon>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="sns-link">
+              <iconify-icon icon="mdi:twitter" style="color: #064073;" width="16" height="16" class="sns-icon" aria-label="twitter/X"></iconify-icon>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
