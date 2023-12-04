@@ -25,7 +25,7 @@
 
 .about-text-wrapper {
 
-  & h5 {
+  & h4 {
     margin-bottom: 1.6rem;
   }
 }
@@ -45,7 +45,7 @@
     flex-direction: column;
   }
 
-  & h5 {
+  & h4 {
     margin-bottom: 1.6rem;
   }
 
@@ -72,6 +72,11 @@
   }
 
   .support-container {
+
+    & h4 {
+      font-size: 3.8rem;
+      line-height: 5.6rem;
+    }
   
     & img {
       width: auto;
@@ -95,7 +100,7 @@
   .about-text-wrapper {
     width: 50%;
 
-    & h5 {
+    & h4 {
       text-align: left;
     }
   }
@@ -112,7 +117,7 @@
       width: 32%;
     }
   
-    & h5 {
+    & h4 {
       margin-bottom: 2.4rem;
     }
   

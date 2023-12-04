@@ -7,15 +7,6 @@
 
 }
 
-.contact-container {
-  & h6 {
-    font-family: var(--font-poppins);
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 2.4rem;
-  }
-}
-
 .contact-form {
   padding: 6.4rem 2rem 9.6rem 2rem;
   display: flex;
