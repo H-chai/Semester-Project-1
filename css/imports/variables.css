@@ -88,6 +88,11 @@ h5 {
   color: var(--font-blue);
   transition: 0.3s;
   display: block;
+
+  & a {
+    text-decoration: none;
+    color: var(--font-blue);
+  }
 }
 
 p {

@@ -20,28 +20,12 @@
     padding: 0 1.6rem;
   }
 
-  & button {
-    padding: .8rem 8rem;
-    margin: 18rem auto 0 auto;
-  }
-
 }
 
 .home-main {
   background-image: url(../image/home_bg_small.jpeg);
   background-position: center;
   height: 90vh;
-}
-
-.cta-yellow {
-  background-color: var(--cta-bg);
-  border-radius: 4px;
-  text-wrap: nowrap;
-
-  & a {
-    text-decoration: none;
-    color: var(--font-blue);
-  }
 }
 
 .exhibits {
@@ -319,15 +303,6 @@
 
     & br {
       display: none;
-    }
-
-    .sp-mv-cta {
-      display: none;
-    }
-
-    & button {
-      padding: .8rem 4rem;
-      margin: 0 auto;
     }
 
   }
