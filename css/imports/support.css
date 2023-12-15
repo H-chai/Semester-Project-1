@@ -56,7 +56,6 @@
   & .support-description {
     padding: 2.4rem 1.6rem;
     background-color: var(--bg-blue);
-    border-radius: 0 0 4px 4px;
   }
 }
 
